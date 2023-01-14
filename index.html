@@ -8,6 +8,54 @@
     <title>Weather App</title>
   </head>
   <body>
+    <div class="modal-error">
+      <p>City Not Found</p>
+    </div>
+    <nav>
+      <div class="input-group">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search" placeholder="Search a city" />
+      </div>
+    </nav>
+    <main class="card-container">
+      <div class="card">
+        <img src="./img/moon.png" alt="" />
+        <div class="city">
+          <h1 class="city-name">Los Angeles</h1>
+          <p class="city-country">USA</p>
+        </div>
+        <div class="card-inner">
+          <div class="time-display">10:30 PM</div>
+          <div class="current-temperature">
+            <h1 class="temperature">24</h1>
+            <h5>&deg;C</h5>
+          </div>
+          <h2 class="current-description">Mostly Sunny</h2>
+          <div class="details">
+            <div class="details-left">
+              <div class="detail-group">
+                <i class="fa-sharp fa-solid fa-wind"></i>
+                <p class="detail-wind">4.0m/s</p>
+              </div>
+              <div class="detail-group">
+                <i class="fa-sharp fa-solid fa-eye"></i>
+                <p class="detail-visibility">8km</p>
+              </div>
+            </div>
+            <div class="details-right">
+              <div class="detail-group">
+                <i class="fa-solid fa-gauge-simple-high"></i>
+                <p class="detail-pressure">999hPa</p>
+              </div>
+              <div class="detail-group">
+                <i class="fa-solid fa-droplet"></i>
+                <p class="detail-humidity">50%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
       <div class="legal-text">Weather API courtesy of OpenWeather</div>
     </footer>
